@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
-    #code
-  end
+    @songs = Song.all
+    render "index", :formats => [:json], :handlers => [:jbuilder]  end
 
   def show
     #code
