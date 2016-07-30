@@ -1,0 +1,1 @@
+json.partial! "twitter_infos/twitter_info", twitter_info: @twitter_info
