@@ -1,6 +1,10 @@
 class LyricsController < ApplicationController
+
   def index
-    #code
+    binding.pry
+
+    @lyrics = Lyric.all
+    render "index", :formats => [:json], :handlers => [:jbuilder]
   end
 
   def show
